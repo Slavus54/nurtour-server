@@ -1,0 +1,2011 @@
+[
+    {
+        "title": "Prague",
+        "cords": {
+            "lat": 50.0876,
+            "long": 14.4211
+        }
+    },
+    {
+        "title": "Brno",
+        "cords": {
+            "lat": 49.1952,
+            "long": 16.6081
+        }
+    },
+    {
+        "title": "Ostrava",
+        "cords": {
+            "lat": 49.8357,
+            "long": 49.8357
+        }
+    },
+    {
+        "title": "Olomouc",
+        "cords": {
+            "lat": 49.5939,
+            "long": 17.2507
+        }
+    },
+    {
+        "title": "Plzen",
+        "cords": {
+            "lat": 49.747,
+            "long": 13.3772
+        }
+    },
+    {
+        "title": "Ceske Budejovice",
+        "cords": {
+            "lat": 48.9745,
+            "long": 14.474
+        }
+    },
+    {
+        "title": "Karlovy Vary",
+        "cords": {
+            "lat": 50.2222,
+            "long": 12.8826
+        }
+    },
+    {
+        "title": "Jihlava",
+        "cords": {
+            "lat": 49.3962,
+            "long": 15.59
+        }
+    },
+    {
+        "title": "Bratislava",
+        "cords": {
+            "lat": 48.1434,
+            "long": 17.1082
+        }
+    },
+    {
+        "title": "Kosice",
+        "cords": {
+            "lat": 48.7206,
+            "long": 21.2575
+        }
+    },
+    {
+        "title": "Trencin",
+        "cords": {
+            "lat": 48.8951,
+            "long": 18.0412
+        }
+    },
+    {
+        "title": "Nitra",
+        "cords": {
+            "lat": 48.3137,
+            "long": 18.088
+        }
+    },
+    {
+        "title": "Zilina",
+        "cords": {
+            "lat": 49.2233,
+            "long": 18.7395
+        }
+    },
+    {
+        "title": "Presov",
+        "cords": {
+            "lat": 48.998,
+            "long": 21.2398
+        }
+    },
+    {
+        "title": "Warsaw",
+        "cords": {
+            "lat": 52.2498,
+            "long": 21.0121
+        }
+    },
+    {
+        "title": "Krakow",
+        "cords": {
+            "lat": 50.0618,
+            "long": 19.937
+        }
+    },
+    {
+        "title": "Wroclaw",
+        "cords": {
+            "lat": 51.1101,
+            "long": 17.0306
+        }
+    },
+    {
+        "title": "Lodz",
+        "cords": {
+            "lat": 51.7767,
+            "long": 19.4544
+        }
+    },
+    {
+        "title": "Szczecin",
+        "cords": {
+            "lat": 53.426,
+            "long": 14.5597
+        }
+    },
+    {
+        "title": "Szczecin",
+        "cords": {
+            "lat": 53.426,
+            "long": 14.5597
+        }
+    },
+    {
+        "title": "Katowice",
+        "cords": {
+            "lat": 50.2593,
+            "long": 19.0215
+        }
+    },
+    {
+        "title": "Gdansk",
+        "cords": {
+            "lat": 54.3503,
+            "long": 18.6526
+        }
+    },
+    {
+        "title": "Czestochowa",
+        "cords": {
+            "lat": 50.8124,
+            "long": 19.1129
+        }
+    },
+    {
+        "title": "Rzeszow",
+        "cords": {
+            "lat": 50.0375,
+            "long": 22.004
+        }
+    },
+    {
+        "title": "Lublin",
+        "cords": {
+            "lat": 51.2487,
+            "long": 22.5691
+        }
+    },
+    {
+        "title": "Bialystok",
+        "cords": {
+            "lat": 53.1322,
+            "long": 23.1633
+        }
+    },
+    {
+        "title": "Budapest",
+        "cords": {
+            "lat": 47.5066,
+            "long": 19.0473
+        }
+    },
+    {
+        "title": "Miskolc",
+        "cords": {
+            "lat": 48.1043,
+            "long": 20.7891
+        }
+    },
+    {
+        "title": "Szekesfehervar",
+        "cords": {
+            "lat": 47.19347,
+            "long": 18.4087
+        }
+    },
+    {
+        "title": "Szolnok",
+        "cords": {
+            "lat": 47.1753,
+            "long": 20.1925
+        }
+    },
+    {
+        "title": "Bucuresti",
+        "cords": {
+            "lat": 44.4333,
+            "long": 26.0997
+        }
+    },
+    {
+        "title": "Cluj-Napoca",
+        "cords": {
+            "lat": 46.7694,
+            "long": 23.5896
+        }
+    },
+    {
+        "title": "Iasi",
+        "cords": {
+            "lat": 47.15963,
+            "long": 27.5877
+        }
+    },
+    {
+        "title": "Targu Mures",
+        "cords": {
+            "lat": 46.5461,
+            "long": 24.5634
+        }
+    },
+    {
+        "title": "Sighisoara",
+        "cords": {
+            "lat": 46.22303,
+            "long": 24.7731
+        }
+    },
+    {
+        "title": "Chisinau",
+        "cords": {
+            "lat": 47.0246,
+            "long": 28.8321
+        }
+    },
+    {
+        "title": "Balti",
+        "cords": {
+            "lat": 47.7599,
+            "long": 27.9251
+        }
+    },
+    {
+        "title": "Tiraspol",
+        "cords": {
+            "lat": 46.8367,
+            "long": 29.6267
+        }
+    },
+    {
+        "title": "Tbilisi",
+        "cords": {
+            "lat": 41.6934,
+            "long": 44.8012
+        }
+    },
+    {
+        "title": "Kutaisi",
+        "cords": {
+            "lat": 42.2715,
+            "long": 42.7054
+        }
+    },
+    {
+        "title": "Batumi",
+        "cords": {
+            "lat": 41.6509,
+            "long": 41.636
+        }
+    },
+    {
+        "title": "Borjomi",
+        "cords": {
+            "lat": 41.839,
+            "long": 43.3799
+        }
+    },
+    {
+        "title": "Sukhumi",
+        "cords": {
+            "lat": 43.0034,
+            "long": 41.0194
+        }
+    },
+    {
+        "title": "Yerevan",
+        "cords": {
+            "lat": 40.1781,
+            "long": 44.5124
+        }
+    },
+    {
+        "title": "Stepanavan",
+        "cords": {
+            "lat": 41.0084,
+            "long": 44.3839
+        }
+    },
+    {
+        "title": "Sophia",
+        "cords": {
+            "lat": 42.6966,
+            "long": 23.3212
+        }
+    },
+    {
+        "title": "Varna",
+        "cords": {
+            "lat": 43.2035,
+            "long": 27.91274
+        }
+    },
+    {
+        "title": "Plovdiv",
+        "cords": {
+            "lat": 42.1476,
+            "long": 24.748
+        }
+    },
+    {
+        "title": "Veliko Tarnovo",
+        "cords": {
+            "lat": 43.0819,
+            "long": 25.6322
+        }
+    },
+    {
+        "title": "Athens",
+        "cords": {
+            "lat": 37.9715,
+            "long": 23.7266
+        }
+    },
+    {
+        "title": "Thessaloniki",
+        "cords": {
+            "lat": 40.6329,
+            "long": 22.9464
+        }
+    },
+    {
+        "title": "Larisa",
+        "cords": {
+            "lat": 39.6391,
+            "long": 22.4190
+        }
+    },
+    {
+        "title": "Kavala",
+        "cords": {
+            "lat": 40.9343,
+            "long": 24.415
+        }
+    },
+    {
+        "title": "Ioannina",
+        "cords": {
+            "lat": 39.6708,
+            "long": 20.86212
+        }
+    },
+    {
+        "title": "Patras",
+        "cords": {
+            "lat": 38.24623,
+            "long": 21.7350
+        }
+    },
+    {
+        "title": "Heraklion",
+        "cords": {
+            "lat": 35.3401,
+            "long": 25.1343
+        }
+    },
+    {
+        "title": "Belgrad",
+        "cords": {
+            "lat": 44.8164,
+            "long": 20.4604
+        }
+    },
+    {
+        "title": "Novi Sad",
+        "cords": {
+            "lat": 45.2576,
+            "long": 19.8494
+        }
+    },
+    {
+        "title": "Subotica",
+        "cords": {
+            "lat": 46.1,
+            "long": 19.665
+        }
+    },
+    {
+        "title": "Niches",
+        "cords": {
+            "lat": 43.3209,
+            "long": 21.8957
+        }
+    },
+    {
+        "title": "Zagreb",
+        "cords": {
+            "lat": 45.813,
+            "long": 15.9773
+        }
+    },
+    {
+        "title": "Rijeka",
+        "cords": {
+            "lat": 45.3264,
+            "long": 14.4427
+        }
+    },
+    {
+        "title": "Zadar",
+        "cords": {
+            "lat": 44.1157,
+            "long": 15.2242
+        }
+    },
+    {
+        "title": "Split",
+        "cords": {
+            "lat": 43.5089,
+            "long": 16.4387
+        }
+    },
+    {
+        "title": "Dubrovnik",
+        "cords": {
+            "lat": 42.6398,
+            "long": 18.1102
+        }
+    },
+    {
+        "title": "Ljubljana",
+        "cords": {
+            "lat": 46.0501,
+            "long": 14.507
+        }
+    },
+    {
+        "title": "Maribor",
+        "cords": {
+            "lat": 46.5576,
+            "long": 15.6453
+        }
+    },
+    {
+        "title": "Kranj",
+        "cords": {
+            "lat": 46.239,
+            "long": 14.3559
+        }
+    },
+    {
+        "title": "Roma",
+        "cords": {
+            "lat": 41.8956,
+            "long": 12.4825
+        }
+    },
+    {
+        "title": "Palermo",
+        "cords": {
+            "lat": 38.1246,
+            "long": 13.3553
+        }
+    },
+    {
+        "title": "Catania",
+        "cords": {
+            "lat": 37.5024,
+            "long": 15.0876
+        }
+    },
+    {
+        "title": "Bari",
+        "cords": {
+            "lat": 41.1235,
+            "long": 16.8724
+        }
+    },
+    {
+        "title": "Napoli",
+        "cords": {
+            "lat": 40.8386,
+            "long": 14.2529
+        }
+    },
+    {
+        "title": "Pescara",
+        "cords": {
+            "lat": 42.46,
+            "long": 14.2123
+        }
+    },
+    {
+        "title": "Terni",
+        "cords": {
+            "lat": 42.5597,
+            "long": 12.6432
+        }
+    },
+    {
+        "title": "Firenze",
+        "cords": {
+            "lat": 43.7714,
+            "long": 11.2539
+        }
+    },
+    {
+        "title": "Pisa",
+        "cords": {
+            "lat": 43.7194,
+            "long": 10.3999
+        }
+    },
+    {
+        "title": "Bologna",
+        "cords": {
+            "lat": 44.4938,
+            "long": 11.3428
+        }
+    },
+    {
+        "title": "Venezia",
+        "cords": {
+            "lat": 45.434,
+            "long": 12.3382
+        }
+    },
+    {
+        "title": "Trieste",
+        "cords": {
+            "lat": 45.65,
+            "long": 13.7676
+        }
+    },
+    {
+        "title": "Verona",
+        "cords": {
+            "lat": 45.4386,
+            "long": 10.9934
+        }
+    },
+    {
+        "title": "Genova",
+        "cords": {
+            "lat": 44.4070,
+            "long": 8.93412
+        }
+    },
+    {
+        "title": "Torino",
+        "cords": {
+            "lat": 45.07078,
+            "long": 7.6855
+        }
+    },
+    {
+        "title": "Milano",
+        "cords": {
+            "lat": 45.464,
+            "long": 9.1893
+        }
+    },
+    {
+        "title": "Madrid",
+        "cords": {
+            "lat": 40.4168,
+            "long": -3.7033
+        }
+    },
+    {
+        "title": "Barcelona",
+        "cords": {
+            "lat": 41.3846,
+            "long": 2.1759
+        }
+    },
+    {
+        "title": "Zaragoza",
+        "cords": {
+            "lat": 41.6551,
+            "long": -0.8759
+        }
+    },
+    {
+        "title": "Valencia",
+        "cords": {
+            "lat": 39.4748,
+            "long": -0.3754
+        }
+    },
+    {
+        "title": "Murcia",
+        "cords": {
+            "lat": 37.9838,
+            "long": -1.1292
+        }
+    },
+    {
+        "title": "Bilbo",
+        "cords": {
+            "lat": 43.2572,
+            "long": -2.924
+        }
+    },
+    {
+        "title": "Sevilla",
+        "cords": {
+            "lat": 37.3858,
+            "long": -5.993
+        }
+    },
+    {
+        "title": "Malaga",
+        "cords": {
+            "lat": 36.72,
+            "long": -4.4197
+        }
+    },
+    {
+        "title": "Lisboa",
+        "cords": {
+            "lat": 38.7138,
+            "long": -9.1334
+        }
+    },
+    {
+        "title": "Porto",
+        "cords": {
+            "lat": 41.1496,
+            "long": -8.6108
+        }
+    },
+    {
+        "title": "Braga",
+        "cords": {
+            "lat": 41.5499,
+            "long": -8.4272
+        }
+    },
+    {
+        "title": "Coimbra",
+        "cords": {
+            "lat": 40.2091,
+            "long": -8.4245
+        }
+    },
+    {
+        "title": "Faro",
+        "cords": {
+            "lat": 37.013,
+            "long": -7.9341
+        }
+    },
+    {
+        "title": "Paris",
+        "cords": {
+            "lat": 48.8533,
+            "long": 2.3491
+        }
+    },
+    {
+        "title": "Lyon",
+        "cords": {
+            "lat": 45.7575,
+            "long": 4.8315
+        }
+    },
+    {
+        "title": "Marseille",
+        "cords": {
+            "lat": 43.28393,
+            "long": 5.37107
+        }
+    },
+    {
+        "title": "Toulouse",
+        "cords": {
+            "lat": 43.6042,
+            "long": 1.443
+        }
+    },
+    {
+        "title": "Bordeaux",
+        "cords": {
+            "lat": 44.8376,
+            "long": -0.5778
+        }
+    },
+    {
+        "title": "Rouen",
+        "cords": {
+            "lat": 49.4403,
+            "long": 1.09442
+        }
+    },
+    {
+        "title": "Nantes",
+        "cords": {
+            "lat": 47.2162,
+            "long": -1.5494
+        }
+    },
+    {
+        "title": "Bern",
+        "cords": {
+            "lat": 46.9471,
+            "long": 7.4441
+        }
+    },
+    {
+        "title": "Zurich",
+        "cords": {
+            "lat": 47.3696,
+            "long": 8.5387
+        }
+    },
+    {
+        "title": "Basel",
+        "cords": {
+            "lat": 47.5582,
+            "long": 7.5877
+        }
+    },
+    {
+        "title": "Geneve",
+        "cords": {
+            "lat": 46.2012,
+            "long": 6.1478
+        }
+    },
+    {
+        "title": "Lausanne",
+        "cords": {
+            "lat": 46.5234,
+            "long": 6.6328
+        }
+    },
+    {
+        "title": "Luzern",
+        "cords": {
+            "lat": 47.0536,
+            "long": 8.3086
+        }
+    },
+    {
+        "title": "Nicosia",
+        "cords": {
+            "lat": 35.1749,
+            "long": 33.3641
+        }
+    },
+    {
+        "title": "Pathos",
+        "cords": {
+            "lat": 34.7571,
+            "long": 32.41603
+        }
+    },
+    {
+        "title": "Limassol",
+        "cords": {
+            "lat": 34.6722,
+            "long": 33.0419
+        }
+    },
+    {
+        "title": "Berlin",
+        "cords": {
+            "lat": 52.5179,
+            "long": 13.4007
+        }
+    },
+    {
+        "title": "Munchen",
+        "cords": {
+            "lat": 48.1371,
+            "long": 11.5754
+        }
+    },
+    {
+        "title": "Hamburg",
+        "cords": {
+            "lat": 53.5475,
+            "long": 9.9903
+        }
+    },
+    {
+        "title": "Koln",
+        "cords": {
+            "lat": 50.9369,
+            "long": 6.9607
+        }
+    },
+    {
+        "title": "Nurnberg",
+        "cords": {
+            "lat": 49.4538,
+            "long": 11.0773
+        }
+    },
+    {
+        "title": "Frankfurt",
+        "cords": {
+            "lat": 50.1111,
+            "long": 8.67305
+        }
+    },
+    {
+        "title": "Stuttgart",
+        "cords": {
+            "lat": 48.7788,
+            "long": 9.1792
+        }
+    },
+    {
+        "title": "Leipzig",
+        "cords": {
+            "lat": 51.3403,
+            "long": 12.3746
+        }
+    },
+    {
+        "title": "Hannover",
+        "cords": {
+            "lat": 52.3731,
+            "long": 9.7401
+        }
+    },
+    {
+        "title": "Bremen",
+        "cords": {
+            "lat": 53.0758,
+            "long": 8.8072
+        }
+    },
+    {
+        "title": "Dresden",
+        "cords": {
+            "lat": 51.0519,
+            "long": 13.7416
+        }
+    },
+    {
+        "title": "Dortmund",
+        "cords": {
+            "lat": 51.513,
+            "long": 7.4647
+        }
+    },
+    {
+        "title": "Duisburg",
+        "cords": {
+            "lat": 51.4344,
+            "long": 6.77
+        }
+    },
+    {
+        "title": "Dusseldorf",
+        "cords": {
+            "lat": 51.2265,
+            "long": 6.7769
+        }
+    },
+    {
+        "title": "Essen",
+        "cords": {
+            "lat": 51.4555,
+            "long": 7.0136
+        }
+    },
+    {
+        "title": "Amsterdam",
+        "cords": {
+            "lat": 52.373,
+            "long": 4.8929
+        }
+    },
+    {
+        "title": "Den Haag",
+        "cords": {
+            "lat": 52.0797,
+            "long": 4.3221
+        }
+    },
+    {
+        "title": "Rotterdam",
+        "cords": {
+            "lat": 51.9215,
+            "long": 4.4847
+        }
+    },
+    {
+        "title": "Groningen",
+        "cords": {
+            "lat": 53.2185,
+            "long": 6.5678
+        }
+    },
+    {
+        "title": "Zwolle",
+        "cords": {
+            "lat": 52.5118,
+            "long": 6.0919
+        }
+    },
+    {
+        "title": "Eindhoven",
+        "cords": {
+            "lat": 51.4393,
+            "long": 5.4774
+        }
+    },
+    {
+        "title": "Utrecht",
+        "cords": {
+            "lat": 52.0904,
+            "long": 5.1204
+        }
+    },
+    {
+        "title": "Emmen",
+        "cords": {
+            "lat": 52.7867,
+            "long": 6.8944
+        }
+    },
+    {
+        "title": "Brussel",
+        "cords": {
+            "lat": 50.8466,
+            "long": 4.3525
+        }
+    },
+    {
+        "title": "Antwerpen",
+        "cords": {
+            "lat": 51.2212,
+            "long": 4.3994
+        }
+    },
+    {
+        "title": "Gent",
+        "cords": {
+            "lat": 51.0538,
+            "long": 3.7227
+        }
+    },
+    {
+        "title": "Brugge",
+        "cords": {
+            "lat": 51.2087,
+            "long": 3.2242
+        }
+    },
+    {
+        "title": "Liege",
+        "cords": {
+            "lat": 50.6366,
+            "long": 5.5799
+        }
+    },
+    {
+        "title": "Leuven",
+        "cords": {
+            "lat": 50.8795,
+            "long": 4.701
+        }
+    },
+    {
+        "title": "Mons",
+        "cords": {
+            "lat": 50.4545,
+            "long": 3.9523
+        }
+    },
+    {
+        "title": "Charleroi",
+        "cords": {
+            "lat": 50.4078,
+            "long": 4.4424
+        }
+    },
+    {
+        "title": "Maastricht",
+        "cords": {
+            "lat": 50.8513,
+            "long": 5.6907
+        }
+    },
+    {
+        "title": "Namur",
+        "cords": {
+            "lat": 50.463,
+            "long": 4.8675
+        }
+    },
+    {
+        "title": "Copenhagen",
+        "cords": {
+            "lat": 55.6761,
+            "long": 12.5687
+        }
+    },
+    {
+        "title": "Odense",
+        "cords": {
+            "lat": 55.3947,
+            "long": 10.3835
+        }
+    },
+    {
+        "title": "Aalborg",
+        "cords": {
+            "lat": 57.04859,
+            "long": 9.9216
+        }
+    },
+    {
+        "title": "Esbierg",
+        "cords": {
+            "lat": 55.4672,
+            "long": 8.4488
+        }
+    },
+    {
+        "title": "Randers",
+        "cords": {
+            "lat": 56.4606,
+            "long": 10.0396
+        }
+    },
+    {
+        "title": "Aarhus",
+        "cords": {
+            "lat": 56.1565,
+            "long": 10.2104
+        }
+    },
+    {
+        "title": "Kharkiv",
+        "cords": {
+            "lat": 50.0044,
+            "long": 36.2357
+        }
+    },
+    {
+        "title": "Kyiv",
+        "cords": {
+            "lat": 50.4495,
+            "long": 30.5253
+        }
+    },
+    {
+        "title": "Poltava",
+        "cords": {
+            "lat": 49.5896,
+            "long": 34.5513
+        }
+    },
+    {
+        "title": "Donetsk",
+        "cords": {
+            "lat": 48.0026,
+            "long": 37.80521
+        }
+    },
+    {
+        "title": "Lugansk",
+        "cords": {
+            "lat": 48.5723,
+            "long": 39.3083
+        }
+    },
+    {
+        "title": "Mariupol",
+        "cords": {
+            "lat": 47.0932,
+            "long": 37.562
+        }
+    },
+    {
+        "title": "Mykolaev",
+        "cords": {
+            "lat": 46.9756,
+            "long": 31.9938
+        }
+    },
+    {
+        "title": "Chernivtsi",
+        "cords": {
+            "lat": 48.29255,
+            "long": 25.9353
+        }
+    },
+    {
+        "title": "Ternopil",
+        "cords": {
+            "lat": 49.5535,
+            "long": 25.5949
+        }
+    },
+    {
+        "title": "Chernigov",
+        "cords": {
+            "lat": 51.4911,
+            "long": 31.2989
+        }
+    },
+    {
+        "title": "Sumy",
+        "cords": {
+            "lat": 50.91015,
+            "long": 34.7961
+        }
+    },
+    {
+        "title": "Vinnitsa",
+        "cords": {
+            "lat": 49.2334,
+            "long": 28.4755
+        }
+    },
+    {
+        "title": "Ivano-Frankivsk",
+        "cords": {
+            "lat": 48.9227,
+            "long": 24.7104
+        }
+    },
+    {
+        "title": "Cherkasy",
+        "cords": {
+            "lat": 49.4444,
+            "long": 32.0593
+        }
+    },
+    {
+        "title": "Zaporozhye",
+        "cords": {
+            "lat": 47.8134,
+            "long": 35.1813
+        }
+    },
+    {
+        "title": "Dnieper",
+        "cords": {
+            "lat": 48.4644,
+            "long": 35.0457
+        }
+    },
+    {
+        "title": "Zhytomyr",
+        "cords": {
+            "lat": 50.2546,
+            "long": 28.6586
+        }
+    },
+    {
+        "title": "Khmelnitsky",
+        "cords": {
+            "lat": 49.4233,
+            "long": 26.9862
+        }
+    },
+    {
+        "title": "Lutsk",
+        "cords": {
+            "lat": 50.7471,
+            "long": 25.3261
+        }
+    },
+    {
+        "title": "Lviv",
+        "cords": {
+            "lat": 49.8436,
+            "long": 24.0268
+        }
+    },
+    {
+        "title": "Riga",
+        "cords": {
+            "lat": 56.9466,
+            "long": 24.1052
+        }
+    },
+    {
+        "title": "Daugavpils",
+        "cords": {
+            "lat": 55.8716,
+            "long": 26.5162
+        }
+    },
+    {
+        "title": "Ventspils",
+        "cords": {
+            "lat": 57.3977,
+            "long": 21.5676
+        }
+    },
+    {
+        "title": "Liepaja",
+        "cords": {
+            "lat": 56.5082,
+            "long": 21.0122
+        }
+    },
+    {
+        "title": "Jelgava",
+        "cords": {
+            "lat": 56.6532,
+            "long": 23.7286
+        }
+    },
+    {
+        "title": "Rezekne",
+        "cords": {
+            "lat": 56.5067,
+            "long": 27.3304
+        }
+    },
+    {
+        "title": "Valmiera",
+        "cords": {
+            "lat": 57.5381,
+            "long": 25.4224
+        }
+    },
+    {
+        "title": "Kraslava",
+        "cords": {
+            "lat": 55.8955,
+            "long": 27.1645
+        }
+    },
+    {
+        "title": "Vilnius",
+        "cords": {
+            "lat": 54.6854,
+            "long": 25.287
+        }
+    },
+    {
+        "title": "Kaunas",
+        "cords": {
+            "lat": 54.8968,
+            "long": 23.8863
+        }
+    },
+    {
+        "title": "Klaipeda",
+        "cords": {
+            "lat": 55.7081,
+            "long": 21.1323
+        }
+    },
+    {
+        "title": "Siauliai",
+        "cords": {
+            "lat": 55.9283,
+            "long": 23.3204
+        }
+    },
+    {
+        "title": "Trakai",
+        "cords": {
+            "lat": 54.6429,
+            "long": 24.9338
+        }
+    },
+    {
+        "title": "Alytus",
+        "cords": {
+            "lat": 54.3989,
+            "long": 24.048
+        }
+    },
+    {
+        "title": "Tallinn",
+        "cords": {
+            "lat": 59.4375,
+            "long": 24.7451
+        }
+    },
+    {
+        "title": "Tartu",
+        "cords": {
+            "lat": 58.3804,
+            "long": 26.7229
+        }
+    },
+    {
+        "title": "Parnu",
+        "cords": {
+            "lat": 58.3857,
+            "long": 24.4967
+        }
+    },
+    {
+        "title": "Narva",
+        "cords": {
+            "lat": 59.3763,
+            "long": 28.19944
+        }
+    },
+    {
+        "title": "Voru",
+        "cords": {
+            "lat": 57.8481,
+            "long": 26.9957
+        }
+    },
+    {
+        "title": "Kuressaare",
+        "cords": {
+            "lat": 58.2529,
+            "long": 22.4845
+        }
+    },
+    {
+        "title": "Minsk",
+        "cords": {
+            "lat": 53.9024,
+            "long": 27.5622
+        }
+    },
+    {
+        "title": "Vitebsk",
+        "cords": {
+            "lat": 55.1959,
+            "long": 30.2051
+        }
+    },
+    {
+        "title": "Mogilev",
+        "cords": {
+            "lat": 53.8948,
+            "long": 30.3307
+        }
+    },
+    {
+        "title": "Gomel",
+        "cords": {
+            "lat": 52.426,
+            "long": 31.0140
+        }
+    },
+    {
+        "title": "Mozyr",
+        "cords": {
+            "lat": 52.0474,
+            "long": 29.2655
+        }
+    },
+    {
+        "title": "Brest",
+        "cords": {
+            "lat": 52.0981,
+            "long": 23.6886
+        }
+    },
+    {
+        "title": "Grodno",
+        "cords": {
+            "lat": 53.6782,
+            "long": 23.8308
+        }
+    },
+    {
+        "title": "Moscow",
+        "cords": {
+            "lat": 55.7542,
+            "long": 37.6206
+        }
+    },
+    {
+        "title": "Saint Petersburg",
+        "cords": {
+            "lat": 59.9393,
+            "long": 30.3157
+        }
+    },
+    {
+        "title": "Novosibirsk",
+        "cords": {
+            "lat": 55.0299,
+            "long": 82.9205
+        }
+    },
+    {
+        "title": "Omsk",
+        "cords": {
+            "lat": 54.9902,
+            "long": 73.3663
+        }
+    },
+    {
+        "title": "Tomsk",
+        "cords": {
+            "lat": 56.4883,
+            "long": 84.9481
+        }
+    },
+    {
+        "title": "Krasnoyarsk",
+        "cords": {
+            "lat": 56.0117,
+            "long": 92.8653
+        }
+    },
+    {
+        "title": "Irkutsk",
+        "cords": {
+            "lat": 52.2802,
+            "long": 104.2824
+        }
+    },
+    {
+        "title": "Helsinki",
+        "cords": {
+            "lat": 60.1695,
+            "long": 24.9522
+        }
+    },
+    {
+        "title": "Turku",
+        "cords": {
+            "lat": 60.4516,
+            "long": 22.2669
+        }
+    },
+    {
+        "title": "Tampere",
+        "cords": {
+            "lat": 61.5025,
+            "long": 23.7698
+        }
+    },
+    {
+        "title": "Espoo",
+        "cords": {
+            "lat": 60.205,
+            "long": 24.6541
+        }
+    },
+    {
+        "title": "Porvoo",
+        "cords": {
+            "lat": 60.393,
+            "long": 25.6646
+        }
+    },
+    {
+        "title": "Lahti",
+        "cords": {
+            "lat": 60.9837,
+            "long": 25.6566
+        }
+    },
+    {
+        "title": "Kouvola",
+        "cords": {
+            "lat": 60.8682,
+            "long": 26.7039
+        }
+    },
+    {
+        "title": "Lappeenranta",
+        "cords": {
+            "lat": 61.0584,
+            "long": 28.1888
+        }
+    },
+    {
+        "title": "Mikkeli",
+        "cords": {
+            "lat": 61.6892,
+            "long": 27.267
+        }
+    },
+    {
+        "title": "Mariehamn",
+        "cords": {
+            "lat": 60.1019,
+            "long": 19.942
+        }
+    },
+    {
+        "title": "Vaasa",
+        "cords": {
+            "lat": 63.0957,
+            "long": 21.6163
+        }
+    },
+    {
+        "title": "Kuopio",
+        "cords": {
+            "lat": 62.893,
+            "long": 27.6783
+        }
+    },
+    {
+        "title": "Savonlinna",
+        "cords": {
+            "lat": 61.8683,
+            "long": 28.8779
+        }
+    },
+    {
+        "title": "Oulu",
+        "cords": {
+            "lat": 65.0095,
+            "long": 25.4683
+        }
+    },
+    {
+        "title": "Rovaniemi",
+        "cords": {
+            "lat": 66.5026,
+            "long": 25.735
+        }
+    },
+    {
+        "title": "Stockholm",
+        "cords": {
+            "lat": 59.325,
+            "long": 18.0707
+        }
+    },
+    {
+        "title": "Helsingborg",
+        "cords": {
+            "lat": 56.0482,
+            "long": 12.6973
+        }
+    },
+    {
+        "title": "Malmo",
+        "cords": {
+            "lat": 55.6061,
+            "long": 13.0003
+        }
+    },
+    {
+        "title": "Gotoborg",
+        "cords": {
+            "lat": 57.7071,
+            "long": 11.9667
+        }
+    },
+    {
+        "title": "Halmstad",
+        "cords": {
+            "lat": 56.674,
+            "long": 12.857
+        }
+    },
+    {
+        "title": "Kalmar",
+        "cords": {
+            "lat": 56.6645,
+            "long": 16.3656
+        }
+    },
+    {
+        "title": "Jonkoping",
+        "cords": {
+            "lat": 57.7819,
+            "long": 14.1598
+        }
+    },
+    {
+        "title": "Orebro",
+        "cords": {
+            "lat": 59.2739,
+            "long": 15.2153
+        }
+    },
+    {
+        "title": "Vasteros",
+        "cords": {
+            "lat": 59.611,
+            "long": 16.5427
+        }
+    },
+    {
+        "title": "Uppsala",
+        "cords": {
+            "lat": 59.8581,
+            "long": 17.6326
+        }
+    },
+    {
+        "title": "Gavle",
+        "cords": {
+            "lat": 60.6745,
+            "long": 17.1417
+        }
+    },
+    {
+        "title": "Hudiksvall",
+        "cords": {
+            "lat": 61.7261,
+            "long": 17.1035
+        }
+    },
+    {
+        "title": "Ostersund",
+        "cords": {
+            "lat": 63.1791,
+            "long": 14.635
+        }
+    },
+    {
+        "title": "Umea",
+        "cords": {
+            "lat": 63.8278,
+            "long": 20.2499
+        }
+    },
+    {
+        "title": "Lycksele",
+        "cords": {
+            "lat": 64.5952,
+            "long": 18.675
+        }
+    },
+    {
+        "title": "Lulea",
+        "cords": {
+            "lat": 65.5826,
+            "long": 22.1485
+        }
+    },
+    {
+        "title": "Kiruna",
+        "cords": {
+            "lat": 67.8525,
+            "long": 20.2329
+        }
+    },
+    {
+        "title": "Pajala",
+        "cords": {
+            "lat": 67.2119,
+            "long": 23.3665
+        }
+    },
+    {
+        "title": "Oslo",
+        "cords": {
+            "lat": 59.9169,
+            "long": 10.728
+        }
+    },
+    {
+        "title": "Drammen",
+        "cords": {
+            "lat": 59.7441,
+            "long": 10.2049
+        }
+    },
+    {
+        "title": "Bergen",
+        "cords": {
+            "lat": 60.3926,
+            "long": 5.3195
+        }
+    },
+    {
+        "title": "Kristianstad",
+        "cords": {
+            "lat": 58.1461,
+            "long": 7.9948
+        }
+    },
+    {
+        "title": "Stavanger",
+        "cords": {
+            "lat": 58.9713,
+            "long": 5.7332
+        }
+    },
+    {
+        "title": "Sandefjord",
+        "cords": {
+            "lat": 59.13,
+            "long": 23.3665
+        }
+    },
+    {
+        "title": "Kongsvinger",
+        "cords": {
+            "lat": 60.1995,
+            "long": 12.0119
+        }
+    },
+    {
+        "title": "Hamar",
+        "cords": {
+            "lat": 60.7937,
+            "long": 11.0742
+        }
+    },
+    {
+        "title": "Rena",
+        "cords": {
+            "lat": 61.1324,
+            "long": 11.3724
+        }
+    },
+    {
+        "title": "Trondheim",
+        "cords": {
+            "lat": 63.4305,
+            "long": 10.3951
+        }
+    },
+    {
+        "title": "Tromso",
+        "cords": {
+            "lat": 69.6487,
+            "long": 18.9565
+        }
+    },
+    {
+        "title": "Reykjavík",
+        "cords": {
+            "lat": 64.1481,
+            "long": -21.94
+        }
+    },
+    {
+        "title": "Grindavík",
+        "cords": {
+            "lat": 63.8368,
+            "long": -22.438
+        }
+    },
+    {
+        "title": "Kopavogur",
+        "cords": {
+            "lat": 64.1116,
+            "long": -21.9083
+        }
+    },
+    {
+        "title": "London",
+        "cords": {
+            "lat": 51.508,
+            "long": -0.0759
+        }
+    },
+    {
+        "title": "Birmingham",
+        "cords": {
+            "lat": 52.4797,
+            "long": -1.90259
+        }
+    },
+    {
+        "title": "Manchester",
+        "cords": {
+            "lat": 53.4852,
+            "long": -2.2443
+        }
+    },
+    {
+        "title": "Liverpool",
+        "cords": {
+            "lat": 53.407,
+            "long": -2.9948
+        }
+    },
+    {
+        "title": "Leeds",
+        "cords": {
+            "lat": 53.8006,
+            "long": -1.5467
+        }
+    },
+    {
+        "title": "Sheffield",
+        "cords": {
+            "lat": 53.3831,
+            "long": -1.4693
+        }
+    },
+    {
+        "title": "Newcastle",
+        "cords": {
+            "lat": 54.97,
+            "long": -1.6114
+        }
+    },
+    {
+        "title": "Durham",
+        "cords": {
+            "lat": 54.7754,
+            "long": -1.5763
+        }
+    },
+    {
+        "title": "Edinburgh",
+        "cords": {
+            "lat": 55.9485,
+            "long": -3.1998
+        }
+    },
+    {
+        "title": "Glasgow",
+        "cords": {
+            "lat": 55.8604,
+            "long": -4.2578
+        }
+    },
+    {
+        "title": "Aberdeen",
+        "cords": {
+            "lat": 57.1476,
+            "long": -2.0951
+        }
+    },
+    {
+        "title": "Dundee",
+        "cords": {
+            "lat": 56.4625,
+            "long": -2.9711
+        }
+    },
+    {
+        "title": "Bristol",
+        "cords": {
+            "lat": 51.452,
+            "long": -2.5868
+        }
+    },
+    {
+        "title": "Bath",
+        "cords": {
+            "lat": 51.3814,
+            "long": -2.3588
+        }
+    },
+    {
+        "title": "Cardiff",
+        "cords": {
+            "lat": 51.4778,
+            "long": -3.1777
+        }
+    },
+    {
+        "title": "Plymouth",
+        "cords": {
+            "lat": 50.3647,
+            "long": -4.1375
+        }
+    },
+    {
+        "title": "Norwich",
+        "cords": {
+            "lat": 52.6286,
+            "long": 1.2964
+        }
+    },
+    {
+        "title": "York",
+        "cords": {
+            "lat": 53.9623,
+            "long": -1.0821
+        }
+    },
+    {
+        "title": "Belfast",
+        "cords": {
+            "lat": 54.5966,
+            "long": -5.93
+        }
+    },
+    {
+        "title": "Derry",
+        "cords": {
+            "lat": 54.9939,
+            "long": -7.3231
+        }
+    },
+    {
+        "title": "Dublin",
+        "cords": {
+            "lat": 53.344,
+            "long": -6.2672
+        }
+    },
+    {
+        "title": "Cork",
+        "cords": {
+            "lat": 51.8985,
+            "long": -8.4756
+        }
+    },
+    {
+        "title": "Limerick",
+        "cords": {
+            "lat": 52.6588,
+            "long": -8.6316
+        }
+    },
+    {
+        "title": "Galway",
+        "cords": {
+            "lat": 53.2718,
+            "long": -9.0532
+        }
+    },
+    {
+        "title": "Waterford",
+        "cords": {
+            "lat": 52.2605,
+            "long": -7.1059
+        }
+    },
+    {
+        "title": "Athlone",
+        "cords": {
+            "lat": 53.4235,
+            "long": -7.9431
+        }
+    },
+    {
+        "title": "Wexford",
+        "cords": {
+            "lat": 52.3386,
+            "long": -6.4622
+        }
+    },
+    {
+        "title": "Mullingar",
+        "cords": {
+            "lat": 53.5251,
+            "long": -7.3424
+        }
+    },
+    {
+        "title": "Tullamore",
+        "cords": {
+            "lat": 53.2753,
+            "long": -7.4921
+        }
+    },
+    {
+        "title": "Kilkenny",
+        "cords": {
+            "lat": 52.6518,
+            "long": -7.2522
+        }
+    },
+    {
+        "title": "Naas",
+        "cords": {
+            "lat": 53.2195,
+            "long": -6.6612
+        }
+    },
+    {
+        "title": "Sligo",
+        "cords": {
+            "lat": 54.2709,
+            "long": -8.4697
+        }
+    },
+    {
+        "title": "Drogheda",
+        "cords": {
+            "lat": 53.7167,
+            "long": -6.3501
+        }
+    },
+    {
+        "title": "Letterkenny",
+        "cords": {
+            "lat": 54.952,
+            "long": -7.7353
+        }
+    }
+]
