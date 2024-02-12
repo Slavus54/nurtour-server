@@ -13,6 +13,7 @@ const Profiles = require('./schemas/Profiles')
 const Tours = require('./schemas/Tours')       
 const Recipes = require('./schemas/Recipes')     
 const Jobs = require('./schemas/Jobs')
+const Heroes = require('./schemas/Heroes')
 
 // microservices
 
@@ -62,6 +63,13 @@ const {
     JOB_TASK_SUCCESS, JOB_TASK_FALL,
     JOB_PHOTO_CREATED, JOB_PHOTO_LIKED, JOB_PHOTO_DELETED, JOB_PHOTO_FALL
 } = require('./responses/job-responses')
+
+const {
+    HERO_CREATED_SUCCESS, HERO_CREATED_FALL,
+    QUOTE_CREATED, QUOTE_LIKED, QUOTE_DELETED, QUOTE_FALL,
+    ACHIEVEMENT_SUCCESS, ACHIEVEMENT_FALL,
+    HERO_PHOTO_SUCCESS, HERO_PHOTO_FALL
+} = require('./responses/hero-responses')
 
 const typeDefs = gql`
     type Cord {
@@ -163,6 +171,33 @@ const typeDefs = gql`
         image: String!,
         likes: Float!
     }
+    type Quote {
+        shortid: String!,
+        name: String!,
+        text: String!,
+        category: String!,
+        likes: Float!
+    }
+    type Achievement {
+        shortid: String!,
+        name: String!,
+        title: String!,
+        position: String!,
+        level: String!
+    }
+    type Hero {
+        id: ID!,
+        shortid: String!,
+        account_id: String!,
+        username: String!,
+        fullname: String!,
+        positions: [String]!,
+        country: String!,
+        century: String!,
+        image: String!,
+        quotes: [Quote]!,
+        achievements: [Achievement]!
+    }
     type Job {
         id: ID!,
         shortid: String!,
@@ -230,6 +265,7 @@ const typeDefs = gql`
         getTours: [Tour]!
         getRecipes: [Recipe]!
         getJobs: [Job]!
+        getHeroes: [Hero]!
     }
     type Mutation {
         register(username: String!, security_code: String!, telegram: String!, role: String!, weekday: String!, region: String!, cords: ICord!, main_photo: String!) : UserCookie!
@@ -257,6 +293,11 @@ const typeDefs = gql`
         manageJobStatus(username: String!, id: String!, option: String!, role: String!) : String!
         updateJobTask(username: String!, id: String!, coll_id: String!, content: String!, level: String!) : String!
         manageJobPhoto(username: String!, id: String!, option: String!, text: String!, image: String!, coll_id: String!) : String!
+        createHero(username: String!, id: String!, fullname: String!, positions: [String]!, country: String!, century: String!, image: String!) : String!
+        getHero(shortid: String!) : Hero!
+        manageHeroQuote(username: String!, id: String!, option: String!, text: String!, category: String!, coll_id: String!) : String!
+        updateHeroPhoto(username: String!, id: String!, image: String!) : String!
+        makeHeroAchievement(username: String!, id: String!, title: String!, position: String!, level: String!) : String!
     }
 `
 
@@ -281,6 +322,11 @@ const resolvers = {
             const jobs = await Jobs.find()
 
             return jobs
+        },
+        getHeroes: async () => {
+            const heroes = await Heroes.find()
+
+            return heroes
         }
     },
     Mutation: {
@@ -940,6 +986,137 @@ const resolvers = {
             }
 
             return JOB_PHOTO_FALL
+        },
+        createHero: async (_, {username, id, fullname, positions, country, century, image}) => {
+            const profile = await Profiles.findOne({username, account_id: id})
+            const hero = await Heroes.findOne({username, fullname, positions, country, century})
+        
+            if (profile && !hero) {
+                if (profile.account_components.filter(el => el.path === 'hero').find(el => el.title === fullname) === undefined) {
+
+                    let shortid = get_id()
+
+                    profile.account_components = [...profile.account_components, {
+                        shortid,
+                        title: fullname,
+                        path: 'hero'
+                    }]
+
+                    const newHero = new Heroes({
+                        shortid,
+                        account_id: profile.account_id,
+                        username: profile.username,
+                        fullname,
+                        positions,
+                        country,
+                        century,
+                        image,
+                        quotes: [],
+                        achievements: []
+                    })
+
+                    await Profiles.updateOne({username, account_id: id}, {$set: profile})
+                    await newHero.save()
+
+                    return HERO_CREATED_SUCCESS
+                }
+            }
+
+            return HERO_CREATED_FALL
+        },
+        getHero: async (_, {shortid}) => {
+            const hero = await Heroes.findOne({shortid})
+
+            return hero
+        },
+        manageHeroQuote: async (_, {username, id, option, text, category, coll_id}) => {
+            const profile = await Profiles.findOne({username})
+            const hero = await Heroes.findOne({shortid: id})
+
+            if (profile && hero) {
+                
+                let feedback = ''
+
+                if (option === 'create') {
+
+                    let shortid = get_id()
+
+                    hero.quotes = [...hero.quotes, {
+                        shortid,
+                        name: profile.username,
+                        text,
+                        category,
+                        likes: 0
+                    }]
+
+                    hero.quotes = slicer(hero.quotes, 40)
+
+                    feedback = QUOTE_CREATED
+
+                } else if (option === 'like') {
+
+                    hero.quotes.map(el => {
+                        if (el.shortid === coll_id) {
+                            el.likes += 1
+                        }
+                    })
+
+                    feedback = QUOTE_LIKED
+
+                } else {
+
+                    hero.quotes = hero.quotes.filter(el => el.shortid !== coll_id)
+
+                    feedback = QUOTE_DELETED
+
+                }
+
+                await Heroes.updateOne({shortid: id}, {$set: hero})
+
+                return feedback
+            }
+
+            return QUOTE_FALL
+        },
+        updateHeroPhoto: async (_, {username, id, image}) => {
+            const profile = await Profiles.findOne({username})
+            const hero = await Heroes.findOne({shortid: id})
+
+            if (profile && hero) {
+
+                hero.image = image
+
+                await Heroes.updateOne({shortid: id}, {$set: hero})
+
+                return HERO_PHOTO_SUCCESS
+            }
+
+            return HERO_PHOTO_FALL
+        },
+        makeHeroAchievement: async (_, {username, id, title, position, level}) => {
+            const profile = await Profiles.findOne({username})
+            const hero = await Heroes.findOne({shortid: id})
+
+            if (profile && hero) {
+
+                let shortid = get_id()
+
+                hero.achievements = [...hero.achievements, {
+                    shortid,
+                    name: profile.username,
+                    title,
+                    position,
+                    level
+                }]
+
+                hero.achievements = slicer(hero.achievements, 40)
+                
+                await Heroes.updateOne({shortid: id}, {$set: hero})
+
+                return ACHIEVEMENT_SUCCESS
+            }
+
+            return ACHIEVEMENT_FALL
         }
         
 
