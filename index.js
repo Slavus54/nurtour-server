@@ -14,6 +14,7 @@ const Tours = require('./schemas/Tours')
 const Recipes = require('./schemas/Recipes')     
 const Jobs = require('./schemas/Jobs')
 const Heroes = require('./schemas/Heroes')
+const Masterpieces = require('./schemas/Masterpieces')
 
 // microservices
 
@@ -70,6 +71,12 @@ const {
     ACHIEVEMENT_SUCCESS, ACHIEVEMENT_FALL,
     HERO_PHOTO_SUCCESS, HERO_PHOTO_FALL
 } = require('./responses/hero-responses')
+
+const {
+    MASTERPIECE_CREATED_SUCCESS, MASTERPIECE_CREATED_FALL,
+    MASTERPIECE_PICTURE_CREATED, MASTERPIECE_PICTURE_LIKED, MASTERPIECE_PICTURE_UPDATED, MASTERPIECE_PICTURE_DELETED, MASTERPIECE_PICTURE_FALL,
+    MASTERPIECE_CHANNEL_CREATED, MASTERPIECE_CHANNEL_DELETED, MASTERPIECE_CHANNEL_FALL
+} = require('./responses/masterpiece-responses')
 
 const typeDefs = gql`
     type Cord {
@@ -185,6 +192,32 @@ const typeDefs = gql`
         position: String!,
         level: String!
     }
+    type Picture {
+        shortid: String!,
+        name: String!,
+        text: String!,
+        category: String!,
+        image: String!,
+        likes: Float!
+    }
+    type Channel {
+        shortid: String!,
+        name: String!,
+        title: String!
+    }
+    type Masterpiece {
+        id: ID!,
+        shortid: String!,
+        account_id: String!,
+        username: String!,
+        title: String!,
+        category: String!,
+        country: String!,
+        epoch: String!,
+        main_photo: String!,
+        pictures: [Picture]!,
+        channels: [Channel]!
+    }
     type Hero {
         id: ID!,
         shortid: String!,
@@ -266,6 +299,7 @@ const typeDefs = gql`
         getRecipes: [Recipe]!
         getJobs: [Job]!
         getHeroes: [Hero]!
+        getMasterpieces : [Masterpiece]!
     }
     type Mutation {
         register(username: String!, security_code: String!, telegram: String!, role: String!, weekday: String!, region: String!, cords: ICord!, main_photo: String!) : UserCookie!
@@ -298,6 +332,10 @@ const typeDefs = gql`
         manageHeroQuote(username: String!, id: String!, option: String!, text: String!, category: String!, coll_id: String!) : String!
         updateHeroPhoto(username: String!, id: String!, image: String!) : String!
         makeHeroAchievement(username: String!, id: String!, title: String!, position: String!, level: String!) : String!
+        createMasterpiece(username: String!, id: String!, title: String!, category: String!, country: String!, epoch: String!, main_photo: String!) : String!
+        getMasterpiece(shortid: String!) : Masterpiece!
+        manageMasterpiecePicture(username: String!, id: String!, option: String!, text: String!, category: String!, image: String!, coll_id: String!) : String!
+        manageMasterpieceChannel(username: String!, id: String!, option: String!, title: String!, coll_id: String!) : String!
     }
 `
 
@@ -327,6 +365,11 @@ const resolvers = {
             const heroes = await Heroes.find()
 
             return heroes
+        },
+        getMasterpieces: async () => {
+            const masterpieces = await Masterpieces.find()
+
+            return masterpieces
         }
     },
     Mutation: {
@@ -1117,6 +1160,142 @@ const resolvers = {
             }
 
             return ACHIEVEMENT_FALL
+        },
+        createMasterpiece: async (_, {username, id, title, category, country, epoch, main_photo}) => {
+            const profile = await Profiles.findOne({username, account_id: id})
+            const masterpiece = await Masterpieces.findOne({username, title, category, country, epoch})
+        
+            if (profile && !masterpiece) {
+                if (profile.account_components.filter(el => el.path === 'masterpiece').find(el => el.title === title) === undefined) {
+
+                    let shortid = get_id()
+
+                    profile.account_components = [...profile.account_components, {
+                        shortid,
+                        title,
+                        path: 'masterpiece'
+                    }]
+
+                    const newMasterpiece = new Masterpieces({
+                        shortid,
+                        account_id: profile.account_id,
+                        username: profile.username,
+                        title,
+                        category,
+                        country,
+                        epoch,
+                        main_photo,
+                        pictures: [],
+                        channels: []
+                    })
+
+                    await Profiles.updateOne({username, account_id: id}, {$set: profile})
+                    await newMasterpiece.save()
+
+                    return MASTERPIECE_CREATED_SUCCESS
+                }
+            }
+
+            return MASTERPIECE_CREATED_FALL
+        },
+        getMasterpiece: async (_, {shortid}) => {
+            const masterpiece = await Masterpieces.findOne({shortid})
+
+            return masterpiece
+        },
+        manageMasterpiecePicture: async (_, {username, id, option, text, category, image, coll_id}) => {
+            const profile = await Profiles.findOne({username})
+            const masterpiece = await Masterpieces.findOne({shortid: id})
+        
+            if (profile && masterpiece) {
+      
+                let feedback = ''
+
+                if (option === 'create') {
+                  
+                    let shortid = get_id()
+
+                    masterpiece.pictures = [...masterpiece.pictures, {
+                        shortid,
+                        name: profile.username,
+                        text,
+                        category,
+                        image,
+                        likes: 0
+                    }]
+
+                    masterpiece.pictures = slicer(masterpiece.pictures, 40)
+
+                    feedback = MASTERPIECE_PICTURE_CREATED
+
+                } else if (option === 'delete') {
+
+                    masterpiece.pictures = masterpiece.pictures.filter(el => el.shortid !== coll_id)
+
+                    feedback = MASTERPIECE_PICTURE_DELETED
+
+                } else {
+
+                    if (option === 'like') {
+
+                        masterpiece.pictures.map(el => {
+                            if (el.shortid === coll_id) {
+                                el.likes += 1
+                            } 
+                        })
+
+                        feedback = MASTERPIECE_PICTURE_LIKED
+
+                    } else if (option === 'update') {
+
+                        masterpiece.main_photo = image
+
+                        feedback = MASTERPIECE_PICTURE_UPDATED
+                    }
+                }
+
+                await Masterpieces.updateOne({shortid: id}, {$set: masterpiece})
+
+                return feedback
+            }
+
+            return MASTERPIECE_PICTURE_FALL
+        },
+        manageMasterpieceChannel: async (_, {username, id, option, title, coll_id}) => {
+            const profile = await Profiles.findOne({username})
+            const masterpiece = await Masterpieces.findOne({shortid: id})
+        
+            if (profile && masterpiece) {
+
+                let feedback = ''
+
+                if (option === 'create') {
+
+                    let shortid = get_id()
+
+                    masterpiece.channels = [...masterpiece.channels, {
+                        shortid,
+                        name: profile.username,
+                        title
+                    }]
+
+                    masterpiece.channels = slicer(masterpiece.channels, 40)
+
+                    feedback = MASTERPIECE_CHANNEL_CREATED
+
+                } else if (option === 'delete') {
+
+                    masterpiece.channels = masterpiece.channels.filter(el => el.shortid !== coll_id)
+
+                    feedback = MASTERPIECE_CHANNEL_DELETED
+                }
+
+                await Masterpieces.updateOne({shortid: id}, {$set: masterpiece})
+
+                return feedback
+            }
+
+            return MASTERPIECE_CHANNEL_FALL
         }
         
 
